@@ -1,0 +1,47 @@
+# =============================================================================
+# 凭据与本地敏感文件（不得提交）
+# =============================================================================
+
+# 含真实 AK/SK、密码的本地覆盖配置
+infra/terraform.tfvars.local
+*.tfvars.local
+infra/terraform.auto.tfvars
+*.auto.tfvars
+infra/terraform.tfvars.bak-*
+
+# Terraform 状态与备份（可能包含敏感字段）
+infra/terraform.tfstate
+infra/terraform.tfstate.*
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# 本地变量覆盖目录
+*.auto.tfvars
+*.auto.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# 变量定义备份
+*.tfvars.bak-*
+
+# 证书与私钥
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.jks
+*.kubeconfig
+
+# 本地执行脚本（可能包含凭据读取逻辑）
+_*.py
+_*.sh
+_*.js
+
+# 临时目录
+tmp/
+.tmp/

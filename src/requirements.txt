@@ -1,0 +1,2 @@
+# Batch job dependencies
+# No cloud provider SDK needed — runs as a containerized job on CCE
